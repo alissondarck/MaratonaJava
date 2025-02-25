@@ -4,9 +4,8 @@ import academy.devdojo.maratonajava.javaCore.CSobrecargaDeMetodos.dominio.Anime;
 
 public class AnimeTeste01 {
     public static void main(String[] args) {
-        Anime anime = new Anime();
-        anime.setTipo("Shounen");
-        anime.setEpisodios(12);
-        anime.setNome("Hakushou");
+        Anime anime = new Anime("Naruto",700,"Shounen");
+        System.out.println(anime);
+
     }
 }
