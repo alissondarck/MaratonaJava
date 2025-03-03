@@ -19,7 +19,9 @@ public class RumtimeExeptionsTeste {
         }catch (IOException e){
             System.out.println("Erro ao criar arquivo!");
             e.wait(100);
+            throw e;
         } finally {
+            System.out.println("Vamos tentar de novo");
             file.createNewFile();
         }
 
